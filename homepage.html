@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garbage Tracking System</title>
+  <link rel = "stylesheet" type = "text/css">
+</head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://shorturl.at/tCVX6') center/cover no-repeat fixed;
+    /* Replace 'map-image.jpg' with your desired map background */
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+
+  .map-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .white-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%; /* Adjust the width to cover approximately 3/4 of the screen */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity level as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .map-section {
+      height: 200px; /* Adjust the height for smaller screens */
+    }
+
+    .white-background {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <div class="map-section"></div>
+    <div class="white-background">
+      <h1>Dapitan Waste Tracking System</h1>
+      <div class="buttons">
+        <a href="../user/user-register.html" class="button">User Access</a>
+        <a href="../admin/admin-login.html" class="button admin">Admin Access</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
